@@ -17,11 +17,11 @@ return (
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item active">
-                        <Link to="/" className="nav-link">
+                        <Link to="/deezweb" className="nav-link">
                         <i className="fas fa-search"></i> Rechercher un titre</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/favorites" className="nav-link">
+                        <Link to="/deezweb/favorites" className="nav-link">
                         <i className="fas fa-heartbeat"></i> Mes favoris</Link>
                     </li>
                 </ul>
@@ -29,8 +29,8 @@ return (
         </div>
     </nav>
 
-    <Route path="/" component={Home} exact />
-    <Route path="/Favorites" component={Favorites} />
+    <Route path="/deezweb" component={Home} exact />
+    <Route path="/deezweb/favorites" component={Favorites} />
 
     </Router>
 
